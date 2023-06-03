@@ -25,13 +25,13 @@ To use the face expression recognition system:
 1. Clone this repository to your local machine.
 
 ```shell
-git clone https://github.com/your-username/face-expression-recognition.git
+git clone https://github.com/Gnaneshwar03/Face-Expression-Recognition.git
 ```
 
 2. Change to the project directory.
 
 ```shell
-cd face-expression-recognition
+cd Face-Expression-Recognition
 ```
 
 3. Download the necessary model weights and label encoder.
@@ -42,7 +42,7 @@ cd face-expression-recognition
 4. Run the real-time face expression recognition code.
 
 ```shell
-python realtime_expression_recognition.py
+python Face_Expression_Recognition_Realtime.py
 ```
 
 5. The code will open a window displaying the webcam feed. It will detect faces in real-time and overlay the predicted emotion label on each detected face.
@@ -55,7 +55,7 @@ The face expression recognition model architecture is based on EfficientNetB2. I
 
 ## Files
 
-- `realtime_expression_recognition.py`: This file contains the code for real-time face expression recognition. It captures video frames from the webcam feed, detects faces using dlib, and performs emotion recognition on each detected face.
+- `Face_Expression_Recognition_Realtime.py`: This file contains the code for real-time face expression recognition. It captures video frames from the webcam feed, detects faces using dlib, and performs emotion recognition on each detected face.
 
 - `best_weights.h5`: This file contains the trained weights of the face expression recognition model. It is required for loading the model architecture and making predictions.
 
