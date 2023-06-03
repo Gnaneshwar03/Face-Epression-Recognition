@@ -1,20 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[ ]:
-
-
+# Importing necessary libraries
 import tensorflow as tf
 import numpy as np
 import cv2
-
 import dlib
 import pickle
 
-
-# In[ ]:
-
-
+# get_model() function
 def get_model():
     backbone = tf.keras.applications.EfficientNetB2(
         input_shape=(96, 96, 3),
@@ -30,16 +21,9 @@ def get_model():
     ])
     return model
 
-
-# In[ ]:
-
-
+# Loading the trained model
 model = get_model()
-model.load_weights("best_weights.h5") # Load the saved weights 
-
-
-# In[ ]:
-
+model.load_weights("best_weights.h5") 
 
 # Load LabelEncoder 
 def load_object(name):
@@ -49,10 +33,7 @@ def load_object(name):
 
 Le = load_object("LabelEncoder")
 
-
-# In[ ]:
-
-
+# Helper functions
 def ProcessImage(image):
     image = tf.convert_to_tensor(image)
     image = tf.image.resize(image , [96 , 96] , method="bilinear")
@@ -71,10 +52,7 @@ def rect_to_bb(rect):
     h = rect.bottom() - y
     return (x, y, w, h)
 
-
-# In[ ]:
-
-
+# Video capturing and real-time prediction loop
 VideoCapture = cv2.VideoCapture(0)
 
 detector = dlib.get_frontal_face_detector()
