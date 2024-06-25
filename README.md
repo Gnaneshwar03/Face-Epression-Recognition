@@ -4,7 +4,7 @@ This repository contains code for real-time face expression recognition using th
 
 ## Sample Image
 
-<img src="https://github.com/Gnaneshwar03/Facial-Expression-Recognition/assets/107243397/b387b218-c9c2-4206-9bc2-86efb8a12859" width="700" height="400">
+<img src="https://github.com/Gnaneshwar03/Facial-Expression-Recognition/assets/107243397/b387b218-c9c2-4206-9bc2-86efb8a12859" width="700" height="600">
 
 ## Prerequisites
 
