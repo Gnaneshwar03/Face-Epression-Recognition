@@ -1,4 +1,4 @@
-# Face Expression Recognition
+# Facial Expression Recognition
 
 This repository contains code for real-time face expression recognition using the EfficientNetB2 model. The project captures video frames from a webcam feed, detects faces using the dlib library, and performs emotion recognition on each detected face.
 
