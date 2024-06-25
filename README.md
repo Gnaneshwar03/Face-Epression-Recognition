@@ -60,19 +60,3 @@ The face expression recognition model architecture is based on EfficientNetB2. I
 - `best_weights.h5`: This file contains the trained weights of the face expression recognition model. It is required for loading the model architecture and making predictions.
 
 - `LabelEncoder.pck`: This file contains the serialized LabelEncoder object used for encoding and decoding the emotion labels. It is required for inverse transforming the predicted emotion labels.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-- The EfficientNetB2 model implementation is based on the TensorFlow Keras Applications.
-- The face detection is performed using the dlib library.
-- The emotion labels are encoded and decoded using the LabelEncoder from scikit-learn.
-
-## References
-
-- TensorFlow Keras Applications: [https://www.tensorflow.org/api_docs/python/tf/keras/applications](https://www.tensorflow.org/api_docs/python/tf/keras/applications)
-- dlib: [http://dlib.net/](http://dlib.net/)
-- scikit-learn LabelEncoder: [https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html)
